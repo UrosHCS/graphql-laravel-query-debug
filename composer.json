@@ -10,7 +10,6 @@
         }
     ],
     "license": "MIT",
-    "type": "project",
     "require": {
         "rebing/graphql-laravel": "^1.12"
     },
