@@ -1,0 +1,29 @@
+{
+    "name": "uroshcs/graphql-laravel-query-debug",
+    "description": "Query debugger for laraver rebing/graphql-laravel package",
+    "keywords": ["framework", "laravel", "graphql", "query", "debugger"],
+    "authors": [
+        {
+            "name": "Uroš Anđelić",
+            "email": "uros.andjelic01@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "rebing/graphql-laravel": "^1.12"
+    },
+    "autoload": {
+        "psr-0": {
+            "Uroshcs\\GraphQLQueryDebugger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uroshcs\\GraphQLQueryDebugger\\DebuggerServiceProvider"
+            ]
+        }
+    }
+}
