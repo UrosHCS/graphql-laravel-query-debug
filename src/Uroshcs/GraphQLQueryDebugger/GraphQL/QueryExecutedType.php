@@ -12,7 +12,7 @@ class QueryExecutedType extends GraphQLType
         'description' => 'An executed query',
     ];
 
-    public function fields()
+    public function fields() :array
     {
         return [
             'sql' => [
