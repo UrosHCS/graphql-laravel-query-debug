@@ -12,7 +12,7 @@ class QueriesExecutedQuery extends Query
         'name' => 'Queries executed',
     ];
 
-    public function type()
+    public function type() :Type
     {
         return Type::listOf(GraphQL::type('query_executed'));
     }
