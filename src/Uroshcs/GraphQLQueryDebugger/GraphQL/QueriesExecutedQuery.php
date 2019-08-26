@@ -3,7 +3,7 @@
 namespace Uroshcs\GraphQLQueryDebugger\GraphQL;
 
 use GraphQL\Type\Definition\Type;
-use GraphQL;
+use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Query;
 
 class QueriesExecutedQuery extends Query
@@ -12,7 +12,7 @@ class QueriesExecutedQuery extends Query
         'name' => 'Queries executed',
     ];
 
-    public function type()
+    public function type() :Type
     {
         return Type::listOf(GraphQL::type('query_executed'));
     }
