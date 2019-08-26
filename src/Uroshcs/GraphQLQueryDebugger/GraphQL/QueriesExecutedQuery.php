@@ -3,7 +3,7 @@
 namespace Uroshcs\GraphQLQueryDebugger\GraphQL;
 
 use GraphQL\Type\Definition\Type;
-use GraphQL;
+use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Query;
 
 class QueriesExecutedQuery extends Query
